@@ -90,11 +90,5 @@ Private Function NumberToText(number As String) As String
         onesText = ones()(onesPart)
     End If
 
-    NumberToText = Trim(hundredsText + " " + tensText + " " + onesText)
+    NumberToText = Trim(hundredsText + " " + Trim(tensText + " " + onesText))
 End Function
-
-
-
-
-
-
